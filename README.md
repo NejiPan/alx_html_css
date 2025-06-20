@@ -1,0 +1,1 @@
+this repo is to make a website, that switches to phone layout if needed.
