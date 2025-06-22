@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headphones Company</title>
+    <!-- Combined CSS -->
+    <style>
+        /* ===== CSS RESET & BASE ===== */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-color: #FF5555;
+            --text-color: #333;
+            --light-text: #777;
+            --max-width: 1000px;
+        }
+        
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            background: url('hero-background.jpg') center/cover no-repeat;
+            color: white;
+            padding: 4rem 0;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+        }
+        
+        .hero-content {
+            max-width: 600px;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .hero-title {
+            font-family: 'Spin Cycle OT', sans-serif;
+            font-size: 3.5rem;
+            margin: 1rem 0;
+            line-height: 1.2;
+            text-transform: uppercase;
+        }
+        
+        .hero-text {
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        /* ===== WHAT WE DO SECTION ===== */
+        .what-we-do {
+            padding: 5rem 0;
+            text-align: center;
+        }
+        
+        .section-header {
+            margin-bottom: 3rem;
+        }
+        
+        .section-title {
+            font-size: 2rem;
+            color: var(--text-color);
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title::after {
+            content: "";
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .service {
+            padding: 2rem 1.5rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .service:hover {
+            transform: translateY(-5px);
+        }
+        
+        .service-icon {
+            font-size: 4rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+        
+        .service-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .service-description {
+            color: var(--light-text);
+            line-height: 1.6;
+        }
+
+        /* ===== RESPONSIVE DESIGN ===== */
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero {
+                padding: 2rem 0;
+                min-height: 60vh;
+            }
+            
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <!-- Icon Font -->
+    <link rel="stylesheet" href="fonts/halberton_school-icon/style.css">
+</head>
+<body>
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-subtitle">Lorem ipsum dolor sit amet lorem ipsum</p>
+                <p class="hero-subtitle">Lorem ipsum dolor sit amet lorem ipsum dolor sit</p>
+                
+                <h1 class="hero-title">GAS TO CHIEFS</h1>
+                
+                <p class="hero-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                    incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+                    dolore magna aliqua.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- WHAT WE DO SECTION -->
+    <section class="what-we-do">
+        <div class="container">
+            <header class="section-header">
+                <h2 class="section-title">What we do...</h2>
+            </header>
+            
+            <div class="services-grid">
+                <article class="service">
+                    <div class="service-icon">
+                        <span class="holberton_school-icon-ic_sound"></span>
+                    </div>
+                    <h3 class="service-title">Lorem ipsum</h3>
+                    <p class="service-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </article>
+                
+                <article class="service">
+                    <div class="service-icon">
+                        <span class="holberton_school-icon-ic_video"></span>
+                    </div>
+                    <h3 class="service-title">Lorem ipsum</h3>
+                    <p class="service-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </article>
+                
+                <article class="service">
+                    <div class="service-icon">
+                        <span class="holberton_school-icon-ic_music"></span>
+                    </div>
+                    <h3 class="service-title">Lorem ipsum</h3>
+                    <p class="service-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </article>
+                
+                <article class="service">
+                    <div class="service-icon">
+                        <span class="holberton_school-icon-ic_hearing"></span>
+                    </div>
+                    <h3 class="service-title">Lorem ipsum</h3>
+                    <p class="service-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

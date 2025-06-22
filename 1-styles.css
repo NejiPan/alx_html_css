@@ -1,0 +1,24 @@
+/* 1. REUSABLE FOUNDATION (same as Task 1) */
+:root {
+    --primary-color: #FF5555;
+    --text-color: #333;
+    --max-width: 1000px;
+}
+
+.container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* 2. NEW "WHAT WE DO" SPECIFIC STYLES */
+.what-we-do {
+    padding: 5rem 0;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
